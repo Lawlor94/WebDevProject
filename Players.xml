@@ -1,6 +1,6 @@
 <site>
    
-    <team>
+    <entry>
         <name>fnatic</name>
         <game>CS:GO</game>
         <members>
@@ -11,10 +11,10 @@
             <mem type="player">Dennis "dennis" Edman</mem>
         </members>
         <country>Sweden</country>
-    </team>
+    </entry>
 
-    <team>
-        <name>Team Solomid</name>
+    <entry>
+        <name>Entry Solomid</name>
         <game>CS:GO</game>
         <members>
             <mem type="captain">Peter "dupreeh" Rasmussen</mem>
@@ -24,10 +24,10 @@
             <mem type="player">Finn "karrigan" Andersen</mem>
         </members>
         <country> Denmark</country>
-    </team>
+    </entry>
     
-    <team>
-        <name>Team EnVyUs</name>
+    <entry>
+        <name>Entry EnVyUs</name>
         <game>CS:GO</game>
         <members>
             <mem type="captain">Nathan "NBK" Schmitt</mem>
@@ -37,9 +37,9 @@
             <mem type="player">Dan "apEX" Madesclaire</mem>
         </members>
         <country>France</country>
-    </team>
+    </entry>
     
-    <team>
+    <entry>
         <name>Luminosity Gaming</name>
         <game>CS:GO</game>
         <members>
@@ -50,7 +50,7 @@
             <mem type="player">Lincoln "fnx" Lau</mem>
         </members>
         <country>Brazil</country>
-    </team>
+    </entry>
 
 
 
