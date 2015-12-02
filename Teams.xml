@@ -1,0 +1,14 @@
+<site>
+    <team>
+        <name></name>
+        <game></game>
+        <members>
+            <m1 type="captain"></m1>    
+            <m2 type="player"></m2>
+            <m3 type="player"></m3>
+            <m4 type="player"></m4>
+            <m5 type="player"></m5>
+            <m6 type="player"></m6>
+        </members>
+    </team>
+</site>
