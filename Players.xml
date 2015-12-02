@@ -106,7 +106,7 @@
     
     <entry>
         <name>ThijsNL </name>
-        <game>HeartStone</game>
+        <game>Hearthstone</game>
         <members>
             <mem type="captain">thijs molendijk</mem>
         </members>
@@ -115,7 +115,7 @@
     
     <entry>
         <name>Ostkaka </name>
-        <game>HeartStone</game>
+        <game>Hearthstone</game>
         <members>
             <mem type="captain">Sebastian Engwall</mem>
         </members>
@@ -124,7 +124,7 @@
     
     <entry>
         <name>Purple </name>
-        <game>HeartStone</game>
+        <game>Hearthstone</game>
         <members>
             <mem type="captain">Ryan Murphy-Root</mem>
         </members>
@@ -133,7 +133,7 @@
     
     <entry>
         <name>StanCifka </name>
-        <game>HeartStone</game>
+        <game>Hearthstone</game>
         <members>
             <mem type="captain">Stanislav Cifka</mem>
         </members>
@@ -142,7 +142,7 @@
     
     <entry>
         <name>Firebat </name>
-        <game>HeartStone</game>
+        <game>Hearthstone</game>
         <members>
             <mem type="captain">James Kostesich</mem>
         </members>
@@ -151,47 +151,56 @@
     
      <entry>
         <name>Kolento </name>
-        <game>HeartStone</game>
+        <game>Hearthstone</game>
         <members>
-            <mem type="captain">Aleksandr Malsh</mem>
+            <mem type="player">Aleksandr Malsh</mem>
         </members>
         <country>Ukraine</country>
     </entry>
     
      <entry>
         <name>hoej </name>
-        <game>HeartStone</game>
+        <game>Hearthstone</game>
         <members>
-            <mem type="captain">Frederik Nielsen</mem>
+            <mem type="player">Frederik Nielsen</mem>
         </members>
         <country>Denmark</country>
     </entry>
     
      <entry>
         <name>Lifecoach </name>
-        <game>HeartStone</game>
+        <game>Hearthstone</game>
         <members>
-            <mem type="captain">Adrian Koy</mem>
+            <mem type="player">Adrian Koy</mem>
         </members>
         <country>Germany</country>
     </entry>
     
      <entry>
         <name>TiddlerCelestial </name>
-        <game>HeartStone</game>
+        <game>Hearthstone</game>
         <members>
-            <mem type="captain">Xieyu Wang</mem>
+            <mem type="player">Xieyu Wang</mem>
         </members>
         <country>China</country>
     </entry>
     
      <entry>
         <name>Xixo </name>
-        <game>HeartStone</game>
+        <game>Hearthstone</game>
         <members>
-            <mem type="captain">Sebastian Bentert</mem>
+            <mem type="player">Sebastian Bentert</mem>
         </members>
         <country>Germany</country>
+    </entry>
+    
+    <entry>
+        <name>Trump </name>
+        <game>Hearthstone</game>
+        <members>
+            <mem type="player">Jefrey Shih</mem>
+        </members>
+        <country>America</country>
     </entry>
 
 
