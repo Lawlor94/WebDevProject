@@ -4,11 +4,11 @@
         <name>fnatic</name>
         <game>CS:GO</game>
         <members>
-            <m1 type="captain">Robin "flusha" Ronnquist</m1>
-            <m2 type="player">Jesper "JW" Wecksell</m2>
-            <m3 type="player">Freddy "KRiMZ" Johansson</m3>
-            <m4 type="player">Olof "olofmeister" Kajbjer</m4>
-            <m5 type="player"></m5>
+            <mem type="captain">Robin "flusha" Ronnquist</m1>
+            <mem type="player">Jesper "JW" Wecksell</m2>
+            <mem type="player">Freddy "KRiMZ" Johansson</m3>
+            <mem type="player">Olof "olofmeister" Kajbjer</m4>
+            <mem type="player"></m5>
         </members>
         <country>Sweden</country>
     </team>
@@ -17,11 +17,11 @@
         <name>Team Solomid</name>
         <game>CS:GO</game>
         <members>
-            <m1 type="captain">Peter "dupreeh" Rasmussen</m1>
-            <m2 type="player">Nicolai "device" Reedtz</m2>
-            <m3 type="player">Andreas "Xyp9x" Hojsleth</m3>
-            <m4 type="player">Rene "cajunb" Borg</m4>
-            <m5 type="player">Finn "karrigan" Andersen</m5>
+            <mem type="captain">Peter "dupreeh" Rasmussen</m1>
+            <mem type="player">Nicolai "device" Reedtz</m2>
+            <mem type="player">Andreas "Xyp9x" Hojsleth</m3>
+            <mem type="player">Rene "cajunb" Borg</m4>
+            <mem type="player">Finn "karrigan" Andersen</m5>
         </members>
         <country> Denmark</country>
     </team>
@@ -30,11 +30,11 @@
         <name>Team EnVyUs</name>
         <game>CS:GO</game>
         <members>
-            <m1 type="captain">Nathan "NBK" Schmitt</m1>
-            <m2 type="player">Vincent "happy-" Cervoni</m2>
-            <m3 type="player">Fabien "kioShiMa" Fiey</m3>
-            <m4 type="player">Kenny "kennyS" Schrub</m4>
-            <m5 type="player">Dan "apEX" Madesclaire</m5>
+            <mem type="captain">Nathan "NBK" Schmitt</m1>
+            <mem type="player">Vincent "happy-" Cervoni</m2>
+            <mem type="player">Fabien "kioShiMa" Fiey</m3>
+            <mem type="player">Kenny "kennyS" Schrub</m4>
+            <mem type="player">Dan "apEX" Madesclaire</m5>
         </members>
         <country>France</country>
     </team>
@@ -43,11 +43,11 @@
         <name>Luminosity Gaming</name>
         <game>CS:GO</game>
         <members>
-            <m1 type="captain">Gabriel "FalleN" Toledo</m1>
-            <m2 type="player">Fernando "fer" Alvarenga</m2>
-            <m3 type="player">Macelo "cold." David</m3>
-            <m4 type="player">Tacio "TACO" Filho</m4>
-            <m5 type="player">Lincoln "fnx" Lau</m5>
+            <mem type="captain">Gabriel "FalleN" Toledo</m1>
+            <mem type="player">Fernando "fer" Alvarenga</m2>
+            <mem type="player">Macelo "cold." David</m3>
+            <mem type="player">Tacio "TACO" Filho</m4>
+            <mem type="player">Lincoln "fnx" Lau</m5>
         </members>
         <country>Brazil</country>
     </team>
