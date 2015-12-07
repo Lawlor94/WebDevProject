@@ -1,0 +1,27 @@
+.jumbotron
+{
+    background-image:url(../esports.png);
+    background-attachment:fixed;
+    min-height:700px;
+    margin-bottom:0px;
+}
+
+.alt1
+{
+    background:#000798;
+    min-height:400px;
+}
+
+.alt2
+{
+    background:#333;
+    min-height:100px;
+    color:#fff;
+    text-align:center;
+}
+
+.padding
+{
+    padding-top:20px;
+    padding-bottom:20px;
+}
