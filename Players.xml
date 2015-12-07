@@ -27,7 +27,7 @@
     </entry>
     
     <entry>
-        <name>Entry EnVyUs</name>
+        <name>EnVyUs</name>
         <game>CS:GO</game>
         <members>
             <mem type="captain">Nathan "NBK" Schmitt</mem>
@@ -50,6 +50,32 @@
             <mem type="player">Lincoln "fnx" Lau</mem>
         </members>
         <country>Brazil</country>
+    </entry>
+    
+    <entry>
+        <name>Cloud9.CS</name>
+        <game>CS:GO</game>
+        <members>
+            <mem type="captain">Jordan "n0thing" Gilbert</mem>
+            <mem type="player">Mike "shroud" Grzesiek</mem>
+            <mem type="player">Sean "sgares" Gares</mem>
+            <mem type="player">Tyler "Skadoodle" Latham</mem>
+            <mem type="player">Ryan "fREAKAOiD" Abadir</mem>
+        </members>
+        <country>USA</country>
+    </entry>
+    
+    <entry>
+        <name>Invictus Gaming LOL</name>
+        <game>League of Legends</game>
+        <members>
+            <mem type="captain">Ge "kid" Yan</mem>
+            <mem type="player">Liu "Zz1tai" Zhihao</mem>
+            <mem type="player">Hongiun "Kitties" Liu</mem>
+            <mem type="player">Tao "Pokemon" Zeng</mem>
+            <mem type="player">Yeonglin "Save" Baek</mem>
+        </members>
+        <country>China</country>
     </entry>
     
     <entry>
