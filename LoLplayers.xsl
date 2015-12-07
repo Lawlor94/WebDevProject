@@ -5,9 +5,9 @@
         <?xml version="1.0" encoding="UTF-8" ?>
         <rss version="2.0">
             <channel>
-                <title>Counter Strike Players</title>
+                <title>League of Legends Players</title>
                 <link>www.google.com</link>
-                <description>A List of all Counter Strike players at our tournament</description>
+                <description>A list of all LoL Players at our tournament</description>
                 
                 <xsl:for-each select="site/entry[game='League of Legends']">
                     <item>
