@@ -26,7 +26,6 @@
                 $entryTag->appendChild($memTag);
                 
                 $rootTag->appendChild($entryTag);
-                
                 $xml->save("../Players.xml");
                 //change this
                 
@@ -90,9 +89,7 @@
             <input type="text" name="name"/>
             <input type="text" name="country"/>
             <input type="text" name="mem"/>
-            <input type="text" name="mem"/>
-            <input type="text" name="mem"/>
-            <input type="text" name="mem"/>
+
             <input type="submit" name="ok"/>
         </form>
     </div>
