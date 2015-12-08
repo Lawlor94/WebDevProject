@@ -18,11 +18,19 @@
         
                     $nameTag = $xml->createElement("name",$_REQUEST['name']);
                     $countryTag = $xml->createElement("country",$_REQUEST['country']);
-                    $memTag = $xml->createElement("mem",$_REQUEST['mem']);
+                    $memTag1 = $xml->createElement("mem",$_REQUEST['mem1']);
+                    $memTag2 = $xml->createElement("mem",$_REQUEST['mem2']);
+                    $memTag3 = $xml->createElement("mem",$_REQUEST['mem3']);
+                    $memTag4 = $xml->createElement("mem",$_REQUEST['mem4']);
+                    $memTag5 = $xml->createElement("mem",$_REQUEST['mem5']);
         
                     $entryTag->appendChild($nameTag);
                     $entryTag->appendChild($countryTag);
-                    $entryTag->appendChild($memTag);
+                    $entryTag->appendChild($memTag1);
+                    $entryTag->appendChild($memTag2);
+                    $entryTag->appendChild($memTag3);
+                    $entryTag->appendChild($memTag4);
+                    $entryTag->appendChild($memTag5);
         
                     $rootTag->appendChild($entryTag);
                     $xml->save("../Players.xml");
@@ -84,7 +92,11 @@
         <form action="index.php" method="post">
             <input type="text" name="name"/>
             <input type="text" name="country"/>
-            <input type="text" name="mem"/>
+            <input type="text" name="mem1"/>
+            <input type="text" name="mem2"/>
+            <input type="text" name="mem3"/>
+            <input type="text" name="mem4"/>
+            <input type="text" name="mem5"/>
             <input type="submit" name="ok"/>
         </form>
     </div>
