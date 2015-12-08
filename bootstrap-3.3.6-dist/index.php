@@ -63,13 +63,11 @@
     
     <div class="jumbotron">
         <div class="container">
-        <p>Hello World</p>    
-        <p>Welcome to PWS</p>  
-        <p>Enter Tournaments with us</p>  
-        <p><a href="#" class="btn btn-primary btn-lg">Tell Me More</a></p> <!--target="_blank"-->
+        <p>WELCOME TO THE PROWESS WORLD SERIES!</p>    
+        <p><a href="#" class="btn btn-warning btn-lg">Tell Me More</a></p> <!--target="_blank"-->
         </div>
     </div>
-    
+
     <div class="alt1" id="tournaments">
     <div class="container">
         <div class="row">
@@ -104,14 +102,15 @@
         </form>
     </div>
     
-<div class="container" id="results">
+<div class="games" id="results">
+<div class="container">
 		<div class="row padding" id="one">
 			<div class="col-md-6">
-				<img src="1.png" class="img-circle img-responsive" alt="Circular holding image"/>
+				<img src="csgo.png" class="img-circle img-responsive" alt="Circular holding image" id="gameimage"/>
 			</div>
 			<div class="col-md-6">
-				<h2 class="text-center">Work 1</h2>
-				<p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				<h2 class="text-center">Counter Strike : Global Offensive</h2>
+				<p class="text-justify">Counter-Strike: Global Offensive (CS:GO) is an online first-person shooter developed by Hidden Path Entertainment and Valve Corporation. It is the fourth game in the main Counter-Strike franchise. Counter-Strike: Global Offensive was released on August 21, 2012, and made available for Microsoft Windows and OS X on Steam, Xbox 360, and a United States-only version on PlayStation 3. The Linux version was released in September 2014.</p><p>It features classic content, such as revamped versions of classic maps, as well as brand new maps, characters and game modes. Cross-platform multiplayer was planned between Windows, OS X, Linux, and PlayStation 3 players, but was ultimately limited to Windows, OS X, and Linux because of the differences in update-frequency between systems. </p>
 				
 			</div>
 		</div>	
@@ -119,22 +118,22 @@
 		
 		<div class="row padding" id="two">
 			<div class="col-md-6">
-				<h2 class="text-center">Work 2</h2>
-				<p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				<h2 class="text-center">Hearthstone</h2>
+				<p class="text-justify">Hearthstone: Heroes of Warcraft is an online collectible card game developed by Blizzard Entertainment. It is free-to-play with optional purchases to acquire additional cards and access content quicker. The game was announced at the Penny Arcade Expo in March 2013 and released on March 11, 2014. Hearthstone is available on both Microsoft Windows and OS X systems, and is also available on iOS and Android touchscreen devices. </p><p>New content for the game involves the addition of new card sets and gameplay, taking the form of either expansion packs or single-player adventures that reward the player with collectible cards upon completion. As of November 2015, there were more than 40 million registered Hearthstone accounts.</p>
 				
 			</div>
 			<div class="col-md-6">
-				<img src="2.png" class="img-circle img-responsive" alt="Circular holding image"/>
+				<img src="hearthstone.png" class="img-circle img-responsive" alt="Circular holding image"/>
 			</div>
 		</div>
 		<hr />
 		<div class="row padding" id="three">
 			<div class="col-md-6">
-				<img src="3.png" class="img-circle img-responsive" alt="Circular holding image"/>
+				<img src="LOL.png" class="img-circle img-responsive" alt="Circular holding image"/>
 			</div>
 			<div class="col-md-6">
-				<h2 class="text-center">Work 3</h2>
-				<p class="text-justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>	
+				<h2 class="text-center">League of Legends</h2></h2>
+				<p class="text-justify">League of Legends (LoL) is a multiplayer online battle arena, real-time strategy video game developed and published by Riot Games, for Microsoft Windows and Mac OS X. It is a free-to-play game supported by microtransactions and inspired by the mod Defense of the Ancients for the video game Warcraft III: The Frozen Throne. </p><p>In League of Legends, players assume the role of an unseen "summoner" that controls a "champion" with unique abilities and battle against a team of other players or computer-controlled champions. The goal is usually to destroy the opposing team's "nexus", a structure which lies at the heart of a base protected by defensive structures. Each League of Legends match is discrete, with all champions starting off fairly weak but increasing in strength by accumulating items and experience over the course of the game.</p>	
 			</div>
 		</div>
 		<hr />
@@ -161,6 +160,7 @@
 			<button type="submit" class="btn btn-default">Submit</button>
 		</form>
 	</div>
+</div>
 	
 	<div class="alt2">
 	    <div class="container">
