@@ -19,11 +19,19 @@
                 
                 $nameTag = $xml->createElement("name",$_REQUEST['name']);
                 $countryTag = $xml->createElement("country",$_REQUEST['country']);
+                
                 $memTag = $xml->createElement("mem",$_REQUEST['mem']);
+                $entryTag->appendChild($memTag);
+                
+                $memTag = $xml->createElement("mem",$_REQUEST['mem']);
+                $entryTag->appendChild($memTag);
+                
+                $memTag = $xml->createElement("mem",$_REQUEST['mem']);
+                $entryTag->appendChild($memTag);
                 
                 $entryTag->appendChild($nameTag);
                 $entryTag->appendChild($countryTag);
-                $entryTag->appendChild($memTag);
+
                 
                 $rootTag->appendChild($entryTag);
                 $xml->save("../Players.xml");
@@ -89,7 +97,9 @@
             <input type="text" name="name"/>
             <input type="text" name="country"/>
             <input type="text" name="mem"/>
-
+            <input type="text" name="mem"/>
+            <input type="text" name="mem"/>     
+            <input type="text" name="mem"/>
             <input type="submit" name="ok"/>
         </form>
     </div>
