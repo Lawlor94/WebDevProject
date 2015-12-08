@@ -8,37 +8,27 @@
     <body>
         
         <?php
-            if(isset($_REQUEST['ok'])){
-                $xml = new DOMDocument("1.0","UTF-8");
-                $xml->load("../Players.xml");
-                //change this
-                
-                $rootTag = $xml->getElementsByTagName("site")->item(0);
-                
-                $entryTag = $xml->createElement("entry");
-                
-                $nameTag = $xml->createElement("name",$_REQUEST['name']);
-                $countryTag = $xml->createElement("country",$_REQUEST['country']);
-                
-                $memTag = $xml->createElement("mem",$_REQUEST['mem']);
-                $entryTag->appendChild($memTag);
-                
-                $memTag = $xml->createElement("mem",$_REQUEST['mem']);
-                $entryTag->appendChild($memTag);
-                
-                $memTag = $xml->createElement("mem",$_REQUEST['mem']);
-                $entryTag->appendChild($memTag);
-                
-                $entryTag->appendChild($nameTag);
-                $entryTag->appendChild($countryTag);
-
-                
-                $rootTag->appendChild($entryTag);
-                $xml->save("../Players.xml");
-                //change this
-                
-                }
-            ?>
+                if(isset($_REQUEST['ok'])){
+                    $xml = new DOMDocument("1.0","UTF-8");
+                    $xml->load("../Players.xml");
+        
+                    $rootTag = $xml->getElementsByTagName("site")->item(0);
+        
+                    $entryTag = $xml->createElement("entry");
+        
+                    $nameTag = $xml->createElement("name",$_REQUEST['name']);
+                    $countryTag = $xml->createElement("country",$_REQUEST['country']);
+                    $memTag = $xml->createElement("mem",$_REQUEST['mem']);
+        
+                    $entryTag->appendChild($nameTag);
+                    $entryTag->appendChild($countryTag);
+                    $entryTag->appendChild($memTag);
+        
+                    $rootTag->appendChild($entryTag);
+                    $xml->save("../Players.xml");
+        
+               }
+        ?>
         
         
     <div class="navbar-static-top navbar-inverse" id="home">
@@ -94,9 +84,6 @@
         <form action="index.php" method="post">
             <input type="text" name="name"/>
             <input type="text" name="country"/>
-            <input type="text" name="mem"/>
-            <input type="text" name="mem"/>
-            <input type="text" name="mem"/>     
             <input type="text" name="mem"/>
             <input type="submit" name="ok"/>
         </form>
