@@ -54,6 +54,32 @@
     </entry>
     
     <entry>
+        <name>Cloud9.CS</name>
+        <game>CS:GO</game>
+        <members>
+            <mem type="captain">Jordan "n0thing" Gilbert</mem>
+            <mem type="player">Mike "shroud" Grzesiek</mem>
+            <mem type="player">Sean "sgares" Gares</mem>
+            <mem type="player">Tyler "Skadoodle" Latham</mem>
+            <mem type="player">Ryan "fREAKAOiD" Abadir</mem>
+        </members>
+        <country>USA</country>
+    </entry>
+    
+    <entry>
+        <name>Invictus Gaming LOL</name>
+        <game>League of Legends</game>
+        <members>
+            <mem type="captain">Ge "kid" Yan</mem>
+            <mem type="player">Liu "Zz1tai" Zhihao</mem>
+            <mem type="player">Hongiun "Kitties" Liu</mem>
+            <mem type="player">Tao "Pokemon" Zeng</mem>
+            <mem type="player">Yeonglin "Save" Baek</mem>
+        </members>
+        <country>China</country>
+    </entry>
+    
+    <entry>
         <name>SKT T1</name>
         <game>League of Legends</game>
         <members>
@@ -203,4 +229,10 @@
         </members>
         <country>America</country>
     </entry>
+<<<<<<< HEAD
 </site>
+=======
+
+
+<entry><name>fnatic</name><country>us</country><mem>4</mem></entry></site>
+>>>>>>> e5041bd69a1b033996a538d7013d22cd833bc384
