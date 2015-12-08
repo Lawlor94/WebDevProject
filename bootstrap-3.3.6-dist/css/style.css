@@ -1,22 +1,28 @@
 .jumbotron
 {
-    background-image:url(../esports.png);
+    background-image:url(../backgrounda.png);
     background-attachment:fixed;
-    min-height:700px;
+    min-height:900px;
     margin-bottom:0px;
 }
 
 .alt1
 {
-    background:#000798;
+    background:#e67e22;
     min-height:400px;
+}
+
+.games
+{
+    background:#303030;
+    color:#e67e22;
 }
 
 .alt2
 {
-    background:#333;
+    background:#303030;
     min-height:100px;
-    color:#fff;
+    color:#288aaf;
     text-align:center;
 }
 
