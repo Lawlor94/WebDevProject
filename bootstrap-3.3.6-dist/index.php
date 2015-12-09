@@ -4,6 +4,14 @@
       <meta name="viewport" content=width=device-width, initial-scale=1>
       <link rel="stylesheet" href="css/bootstrap.min.css" />
       <link rel="stylesheet" href="css/style.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>
+         $(document).ready(function(){
+             $("#show").click(function(){
+                 $("#userForm").show();
+             });
+         });
+      </script>
       <script>
          function validateForm() {
              
@@ -40,41 +48,73 @@
          
          }
       </script>
+     <script type="text/javascript" src="teamname.js"></script>
    </head>
-   <body>
+<body onload="process()">
+
       <?php
-         if(isset($_REQUEST['ok'])){
+         if(isset($_POST['ok'])){
              $xml = new DOMDocument("1.0","UTF-8");
-             $xml->load("../Players.xml");
+             $xml->load("Players.xml");
+             
+             $name = $_POST['name'];
+             $game = $_POST['game'];
+             $region = $_POST['region'];
+             $mem1 = $_POST['mem1'];
+             $mem2 = $_POST['mem2'];
+             $mem3 = $_POST['mem3'];
+             $mem4 = $_POST['mem4'];
+             $mem5 = $_POST['mem5'];
+             //assigns inputs from the Team Form and assigns them to variables
          
              $rootTag = $xml->getElementsByTagName("site")->item(0);
-         
+             
+             // $sxe->addAttribute('type', 'documentary');
+
+             
              $entryTag = $xml->createElement("entry");
-         
-             $nameTag = $xml->createElement("name",$_REQUEST['name']);
-             $countryTag = $xml->createElement("country",$_REQUEST['country']);
-             $gameTag = $xml->createElement("game",$_REQUEST['game']);
-             $memTag1 = $xml->createElement("mem",$_REQUEST['mem1']);
-             $memTag2 = $xml->createElement("mem",$_REQUEST['mem2']);
-             $memTag3 = $xml->createElement("mem",$_REQUEST['mem3']);
-             $memTag4 = $xml->createElement("mem",$_REQUEST['mem4']);
-             $memTag5 = $xml->createElement("mem",$_REQUEST['mem5']);
-         
-             $entryTag->appendChild($nameTag);
-             $entryTag->appendChild($countryTag);
-             $entryTag->appendChild($memTag1);
-             $entryTag->appendChild($memTag2);
-             $entryTag->appendChild($memTag3);
-             $entryTag->appendChild($memTag4);
-             $entryTag->appendChild($memTag5);
-         
-             $rootTag->appendChild($entryTag);
-             $xml->save("../Players.xml");
+             //creates the "entry" tag under site
+               $nameTag = $xml->createElement("name", $name);
+               $gameTag = $xml->createElement("game", $game);
+               $regionTag = $xml->createElement("region", $region);
+               $mem1Tag = $xml->createElement("mem", $mem1);
+               $membersTag = $xml->createElement("members");
+               //creates "members" tag under entry
+                  $mem1Tag = $xml->createElement("mem", $mem1);
+                  $mem2Tag = $xml->createElement("mem", $mem2);
+                  $mem3Tag = $xml->createElement("mem", $mem3);
+                  $mem4Tag = $xml->createElement("mem", $mem4);
+                  $mem5Tag = $xml->createElement("mem", $mem5);
+                  //adds each individual members
+                  $mem1Tag->setAttribute('type', 'captain');
+                  $mem2Tag->setAttribute('type', 'player');
+                  $mem3Tag->setAttribute('type', 'player');
+                  $mem4Tag->setAttribute('type', 'player');
+                  $mem5Tag->setAttribute('type', 'player');
+                  //adds attributes to each member. Member 1 is always the team captain.
+             
+                $entryTag->appendChild($nameTag);
+                $entryTag->appendChild($gameTag);
+                $entryTag->appendChild($membersTag);
+                //appends name, game and members tags under "entry"
+                
+                $membersTag->appendChild($mem1Tag);
+                $membersTag->appendChild($mem2Tag);
+                $membersTag->appendChild($mem3Tag);
+                $membersTag->appendChild($mem4Tag);
+                $membersTag->appendChild($mem5Tag);
+                $entryTag->appendChild($regionTag);
+                //appends mem tags under "members", then appends region.
+                //the reason region is done here seemlingly out of order is because it's how our XML file was formatted and it would be too much work to change everything, so we left it like this for the sake of consistancy
+            
+                $rootTag->appendChild($entryTag);
+                //appends entry tag under the root tag
+                $xml->save("Players.xml");
          
          }
          ?>
       <div class="navbar-static-top navbar-inverse" id="home">
-         <div class="container">
+         <div class="container">7
             <div class="navbar-brand">
                Prowess World Series
             </div>
@@ -98,10 +138,10 @@
             <p><a href="#" class="btn btn-warning btn-lg">Tell Me More</a></p>
             <!--target="_blank"-->
             <div ="container">
-         </div>
+             </div>
+          </div>
       </div>
-      </div>
-      <div class="alt1" id="tournaments">
+     <div class="alt1" id="tournaments">
          <div class="container">
             <div class="row">
                <div class="col-md-4">
@@ -122,17 +162,62 @@
             </div>
          </div>
       </div>
-      <div class="container">
-         <form action="index.php" method="post">
-            <input type="text" name="name"/>
-            <input type="text" name="country"/>
-            <input type="text" name="game"/>
-            <input type="text" name="mem1"/>
-            <input type="text" name="mem2"/>
-            <input type="text" name="mem3"/>
-            <input type="text" name="mem4"/>
-            <input type="text" name="mem5"/>
-            <input type="submit" name="ok"/>
+			  <div class="container center" align="center"> <!--Start of Players Div-->
+        <br>
+        
+        
+            <H3 align="center"> Players </H3>
+            <!--Start of part that loads the XML file data into a table on the page-->
+           <?php
+           $get = file_get_contents('Players.xml');
+           $arr = simplexml_load_string($get);
+           $data = $arr->entry;
+           ?>
+           <table id="playerTable"><!--Start of Table-->
+               <tr>
+                   <!-- Headers for the table-->
+                   <th>Name</th>
+                   <th>Game</th>
+                   <th>Captain</th>
+                   <th>Region</th>
+               </tr>
+               <?php
+               foreach($data as $row){
+               ?>
+               <tr>
+                   <td><?php echo $row->name ?></td>
+                   <td><?php echo $row->game ?></td>
+                   <td><?php echo $row->members->mem[0] ?></td>
+                   <td><?php echo $row->region ?></td>
+               </tr>
+               <?php
+               }
+               ?>
+           </table><!--End of Table--> <br/>
+         </div>
+      <div  class="container" align="center">
+         <button id="show" align="center">Sign Up</button>
+         <br/>
+         <form id="userForm" action="index.php" method="post">
+            <select class="selectForm" name="game">
+                <option value="" disabled selected>Select a Game</option>
+                <option value="CS:GO">Counter Strike: Global Offensive</option>
+                <option value="LoL">League of Legends</option>
+                <option value="Dota 2">Dota 2</option>
+            </select> <br/>
+            <select class="selectForm" name="region">
+               <option value="" disabled selected>Select a Region</option>
+               <option value="Europe">Europe</option>
+               <option value="America">America</option>
+               <option value="Asia">Asia</option>
+            </select>  <br/>
+            <input class="selectForm" placeholder="Team Name" type="text" name="name"/> <br/>
+            <input class="selectForm" placeholder="Team Captain" type="text" name="mem1"/> <br/>
+            <input class="selectForm" placeholder="Team Member" type="text" name="mem2"/> <br/>
+            <input class="selectForm" placeholder="Team Member" type="text" name="mem3"/> <br/>
+            <input class="selectForm" placeholder="Team Member" type="text" name="mem4"/> <br/>
+            <input class="selectForm" placeholder="Team Member" type="text" name="mem5"/> <br/>
+            <input type="submit" name="ok"/> <br/>
          </form>
       </div>
       <div class="games" id="results">
@@ -150,12 +235,12 @@
          <hr />
          <div class="row padding" id="two">
             <div class="col-md-6">
-               <h2 class="text-center">Hearthstone</h2>
-               <p class="text-justify">Hearthstone: Heroes of Warcraft is an online collectible card game developed by Blizzard Entertainment. It is free-to-play with optional purchases to acquire additional cards and access content quicker. The game was announced at the Penny Arcade Expo in March 2013 and released on March 11, 2014. Hearthstone is available on both Microsoft Windows and OS X systems, and is also available on iOS and Android touchscreen devices. </p>
-               <p>New content for the game involves the addition of new card sets and gameplay, taking the form of either expansion packs or single-player adventures that reward the player with collectible cards upon completion. As of November 2015, there were more than 40 million registered Hearthstone accounts.</p>
+               <h2 class="text-center">Dota 2</h2>
+               <p class="text-justify">Dota 2 is a free-to-play multiplayer online battle arena (MOBA) video game developed and published by Valve Corporation. Released for Microsoft Windows, OS X, and Linux in July 2013, following a Windows-only public beta testing phase that began in 2011, the game is the stand-alone sequel to Defense of the Ancients (DotA), a mod for Warcraft III: Reign of Chaos and its expansion pack, The Frozen Throne. Dota 2 is one of the most actively played games on Steam, with it having a peak of over a million concurrent players in February and March 2015.</p>
+
             </div>
             <div class="col-md-6">
-               <img src="hearthstone.png" class="img-circle img-responsive" alt="Circular holding image"/>
+               <img src="dota2.png" class="img-circle img-responsive" alt="Circular holding image" align="right"/>
             </div>
          </div>
          <hr />

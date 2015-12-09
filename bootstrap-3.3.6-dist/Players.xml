@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Players.xsl"?>
+<site>
+   <entry>
+      <name>fnatic</name>
+      <game>CS:GO</game>
+      <members>
+         <mem type="captain">Mark "Mr. Klenrd" Leonard</mem>
+         <mem type="player">Jesper "JW" Wecksell</mem>
+         <mem type="player">Freddy "KRiMZ" Johansson</mem>
+         <mem type="player">Olof "olofmeister" Kajbjer</mem>
+         <mem type="player">Dennis "dennis" Edman</mem>
+      </members>
+      <region>Europe</region>
+   </entry>
+   <entry>
+      <name>Team Solomid</name>
+      <game>CS:GO</game>
+      <members>
+         <mem type="captain">Peter "dupreeh" Rasmussen</mem>
+         <mem type="player">Nicolai "device" Reedtz</mem>
+         <mem type="player">Andreas "Xyp9x" Hojsleth</mem>
+         <mem type="player">Rene "cajunb" Borg</mem>
+         <mem type="player">Finn "karrigan" Andersen</mem>
+      </members>
+      <region>Europe</region>
+   </entry>
+   <entry>
+      <name>EnVyUs</name>
+      <game>CS:GO</game>
+      <members>
+         <mem type="captain">Nathan "NBK" Schmitt</mem>
+         <mem type="player">Vincent "happy-" Cervoni</mem>
+         <mem type="player">Fabien "kioShiMa" Fiey</mem>
+         <mem type="player">Kenny "kennyS" Schrub</mem>
+         <mem type="player">Dan "apEX" Madesclaire</mem>
+      </members>
+      <region>Europe</region>
+   </entry>
+   <entry>
+      <name>Luminosity Gaming</name>
+      <game>CS:GO</game>
+      <members>
+         <mem type="captain">Gabriel "FalleN" Toledo</mem>
+         <mem type="player">Fernando "fer" Alvarenga</mem>
+         <mem type="player">Macelo "cold." David</mem>
+         <mem type="player">Tacio "TACO" Filho</mem>
+         <mem type="player">Lincoln "fnx" Lau</mem>
+      </members>
+      <region>America</region>
+   </entry>
+   <entry>
+      <name>Cloud9.CS</name>
+      <game>CS:GO</game>
+      <members>
+         <mem type="captain">Jordan "n0thing" Gilbert</mem>
+         <mem type="player">Mike "shroud" Grzesiek</mem>
+         <mem type="player">Sean "sgares" Gares</mem>
+         <mem type="player">Tyler "Skadoodle" Latham</mem>
+         <mem type="player">Ryan "fREAKAOiD" Abadir</mem>
+      </members>
+      <region>America</region>
+   </entry>
+   <entry>
+      <name>Invictus Gaming LOL</name>
+      <game>League of Legends</game>
+      <members>
+         <mem type="captain">Ge "kid" Yan</mem>
+         <mem type="player">Liu "Zz1tai" Zhihao</mem>
+         <mem type="player">Hongiun "Kitties" Liu</mem>
+         <mem type="player">Tao "Pokemon" Zeng</mem>
+         <mem type="player">Yeonglin "Save" Baek</mem>
+      </members>
+      <region>Asia</region>
+   </entry>
+   <entry>
+      <name>SKT T1</name>
+      <game>League of Legends</game>
+      <members>
+         <mem type="captain">Sang-hyeok "Faker" Lee</mem>
+         <mem type="player">Seong-ung "bengi" Bae</mem>
+         <mem type="player">JunSik "Bang" Bae</mem>
+         <mem type="player">JaeWan "wolf" Lee</mem>
+         <mem type="player">YeChan "Scout" Lee</mem>
+      </members>
+      <region>Europe</region>
+   </entry>
+   <entry>
+      <name>Edward Gaming</name>
+      <game>League of Legends</game>
+      <members>
+         <mem type="captain">Kai "ClearLove" Ming</mem>
+         <mem type="player">Zhiming "Fireloli" Zhao</mem>
+         <mem type="player">Yang "Koro1" Tong</mem>
+         <mem type="player">HyeokGyu "Deft" Kim</mem>
+         <mem type="player">WonSeok "PawN" Heo</mem>
+      </members>
+      <region>Asia</region>
+   </entry>
+   <entry>
+      <name>Origen</name>
+      <game>League of Legends</game>
+      <members>
+         <mem type="captain">Enrique "xPeke" Cedeno</mem>
+         <mem type="player">Maurice "Amazing" Stuckenschneider</mem>
+         <mem type="player">Alfonso "Mithy" Rodriguez</mem>
+         <mem type="player">Jesper "Niels" Svenningsen</mem>
+         <mem type="player">Paul "sOAZ" Boyer</mem>
+      </members>
+      <region>Asia</region>
+   </entry>
+   <entry>
+      <name>ahq e-Sports Club</name>
+      <game>League of Legends</game>
+      <members>
+         <mem>Shu-Wei "Westdoor" Liu</mem>
+         <mem>Shang-Ching "Greentea" sa</mem>
+         <mem>Chen "ziv.tw" Yi</mem>
+         <mem>Chia-Wei "MrAlbis" Kang</mem>
+         <mem>Chao-Hung "Mountain" Hsueh</mem>
+      </members>
+      <region>Asia</region>
+   </entry>
+   <entry>
+      <name>Team Secret</name>
+      <game>Dota 2</game>
+      <members>
+         <mem type="captain">Clement "Puppey" Ivanov</mem>
+         <mem type="player">Rasmus "MiSeRy-" Filipsen</mem>
+         <mem type="player">Johan "pieliedie" Astrom</mem>
+         <mem type="player">Aliwi "w33haaa" Omar</mem>
+         <mem type="player">Jacky "EternalEnvy" Mao</mem>
+      </members>
+      <region>America</region>
+   </entry>
+   <entry>
+      <name>Cloud9</name>
+      <game>Dota 2</game>
+      <members>
+         <mem type="captain">Robbie "The Robbit" Jenkinson</mem>
+         <mem type="player">Mike "shroud" Grzesiek</mem>
+         <mem type="player">Mark "Mr.Klenrd" Leonard</mem>
+         <mem type="player">Tyler "Skadoodle" Latham</mem>
+         <mem type="player">David "Dawlor Bill" Lawlor</mem>
+      </members>
+      <region>Europe</region>
+   </entry>
+   <entry>
+      <name>Team Liquid</name>
+      <game>Dota 2</game>
+      <members>
+         <mem type="captain">Kuro Salehi "KuroKy-" Takhasomi</mem>
+         <mem type="player">Adrian "FATA-" Trinks</mem>
+         <mem type="player">Jesse "JerAx" Vainikka</mem>
+         <mem type="player">Lasse "Matumbaman" Urpalaninen</mem>
+         <mem type="player">Ivan "MinD_ContRoL" Borislavov Ivanov</mem>
+      </members>
+      <region>Europe</region>
+   </entry>
+   <entry>
+      <name>Fnatic</name>
+      <game>Dota 2</game>
+      <members>
+         <mem type="captain">Yee "Mushi" Fung Chai</mem>
+         <mem type="player">Chong "Ohaiyo" Xin Khoo</mem>
+         <mem type="player">Djardel "chrissy-Dj" Mamputsi</mem>
+         <mem type="player">Wai "net" Pern Lim</mem>
+         <mem type="player">Ahmad "ADTR" Syazwan</mem>
+      </members>
+      <region>Asia</region>
+   </entry>
+   <entry>
+      <name>Digital Chaos</name>
+      <game>Dota 2</game>
+      <members>
+         <mem type="captain">Tyler "TC" Cook</mem>
+         <mem type="player">Yawar "YawaR" Hassan</mem>
+         <mem type="player">Sam "Bulba" Sosale</mem>
+         <mem type="player">Kurtis "Aui_2000" Ling</mem>
+         <mem type="player">Theeban "1437" Siva</mem>
+      </members>
+      <region>America</region>
+   </entry>
+<entry><name>Asia Team GO</name><game>LoL</game><members><mem type="captain">John</mem><mem type="player">Jack</mem><mem type="player">James</mem><mem type="player">Jones</mem><mem type="player">Jane</mem></members><region>Asia</region></entry><entry><name/><game/><members><mem type="captain"/><mem type="player"/><mem type="player"/><mem type="player"/><mem type="player"/></members><region/></entry><entry><name/><game/><members><mem type="captain"/><mem type="player"/><mem type="player"/><mem type="player"/><mem type="player"/></members><region/></entry><entry><name>1</name><game/><members><mem type="captain"/><mem type="player"/><mem type="player"/><mem type="player"/><mem type="player"/></members><region/></entry></site>

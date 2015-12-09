@@ -18,6 +18,18 @@
     color:#e67e22;
 }
 
+#playerTable
+{
+    margin: auto;
+    width:90%;
+}
+
+.selectForm
+{
+    width: 200
+px;
+}
+
 .alt2
 {
     background:#303030;
@@ -30,4 +42,8 @@
 {
     padding-top:20px;
     padding-bottom:20px;
+}
+
+#userForm{
+    display:none;
 }
