@@ -4,6 +4,7 @@
       <meta name="viewport" content=width=device-width, initial-scale=1>
       <link rel="stylesheet" href="css/bootstrap.min.css" />
       <link rel="stylesheet" href="css/style.css" />
+      <link rel="shortcut icon" href="favicon.ico"/> 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script>
          $(document).ready(function(){
@@ -48,9 +49,18 @@
          
          }
       </script>
-     <script type="text/javascript" src="teamname.js"></script>
+       <script type="text/javascript" src="teamnames.js"></script>
+  
+
+<script>
+$(document).ready(function(){
+    $("button1").click(function(){
+        $("	<div class=contentAreaStyle").show();
+    });
+});
+</script>
    </head>
-<body onload="process()">
+<body onload="process()" id="home">
 
       <?php
          if(isset($_POST['ok'])){
@@ -113,7 +123,7 @@
          
          }
          ?>
-      <div class="navbar-static-top navbar-inverse" id="home">
+      <div class="navbar-static-top navbar-inverse navbar-static-top" id="home">
          <div class="container">7
             <div class="navbar-brand">
                Prowess World Series
@@ -124,58 +134,66 @@
             <div class="collapse navbar-collapse navHeaderCollapse">
                <ul class="nav navbar-nav navbar-right">
                   <li><a href="">Home</a></li>
+                  <li><a href="#search">Search</a></li>
                   <li><a href="#tournaments">Tournaments</a></li>
-                  <li><a href="#results">Results</a></li>
-                  <li><a href="#signup">Sign Up</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#addplayers">Add Players</a></li>
+                  <li><a href="#gamedetails">Game Details</a></li>
+                  <li><a href="#mailinglist">Mailing List</a></li>
                </ul>
             </div>
          </div>
       </div>
-      <div class="jumbotron">
-         <div class="container">
-            <p>WELCOME TO THE PROWESS WORLD SERIES!</p>
-            <p><a href="#" class="btn btn-warning btn-lg">Tell Me More</a></p>
+<div class="jumbotron">
+   <div class="container" id="search">
+            <p><h2><br/>WELCOME TO THE PROWESS WORLD SERIES!</h2></p>
             <!--target="_blank"-->
-            <div ="container">
-             </div>
-          </div>
+       <div ="container">
+         <div class="col-sm-12 col-sm-push-0 contentAreaStyle4" id="search">
+					<title> Rssfeed</title>
+					<h3>Search for a team by Name</h3>
+               Enter a teams name to see if they're competing:
+               <input type="text" id="userInput">
+            <div id="displayResults"></div>
+			</div> 
       </div>
+   </div>
+</div>
+
      <div class="alt1" id="tournaments">
          <div class="container">
             <div class="row">
                <div class="col-md-4">
-                  <h2 class="text-center">Past Work</h2>
-                  <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  <a href="#one" class="btn btn-default">Tell Me More...</a>
+                  <h2 class="text-center">CS:GO Tournament</h2>
+                  <p class="text-justify">Sign Up to our Counter Strike : Global Offensive tournaments.<br /><br />Play in 5 v 5 online games<br /><br /></p>
+                  <a href="#one" class="btn btn-default">Learn about CS:GO</a>
                </div>
                <div class="col-md-4">
-                  <h2 class="text-center">Past Work</h2>
-                  <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  <a href="#two" class="btn btn-default">Tell Me More...</a>
+                  <h2 class="text-center">Dota 2</h2>
+                  <p class="text-justify"></p>Sign Up to our Dota 2 tournaments.<br/><br />Play in 5 v 5 online games<br /><br /></p>
+                  <a href="#two" class="btn btn-default">Learn about Dota 2</a>
                </div>
                <div class="col-md-4">
-                  <h2 class="text-center">Past Work</h2>
-                  <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  <a href="#three" class="btn btn-default">Tell Me More...</a>
+                  <h2 class="text-center">League of Legends</h2>
+                  <p class="text-justify">Sign Up to our League of Legends tournaments.<br /><br />Play in 5 v 5 online games<br /><br /></p>
+                  <a href="#three" class="btn btn-default">Learn about League of Legends</a>
                </div>
             </div>
          </div>
       </div>
-			  <div class="container center" align="center"> <!--Start of Players Div-->
+			  <div class="container center" align="center"> 
         <br>
         
         
-            <H3 align="center"> Players </H3>
-            <!--Start of part that loads the XML file data into a table on the page-->
+            <h3 class="alt3" align="center" id="addplayers"> Players </h3>
+            
            <?php
            $get = file_get_contents('Players.xml');
            $arr = simplexml_load_string($get);
            $data = $arr->entry;
            ?>
-           <table id="playerTable"><!--Start of Table-->
+           <table id="playerTable">
                <tr>
-                   <!-- Headers for the table-->
+                   
                    <th>Name</th>
                    <th>Game</th>
                    <th>Captain</th>
@@ -202,7 +220,7 @@
             <select class="selectForm" name="game">
                 <option value="" disabled selected>Select a Game</option>
                 <option value="CS:GO">Counter Strike: Global Offensive</option>
-                <option value="LoL">League of Legends</option>
+                <option value="League of Legends">League of Legends</option>
                 <option value="Dota 2">Dota 2</option>
             </select> <br/>
             <select class="selectForm" name="region">
@@ -220,7 +238,7 @@
             <input type="submit" name="ok"/> <br/>
          </form>
       </div>
-      <div class="games" id="results">
+      <div class="games" id="gamedetails">
       <div class="container">
          <div class="row padding" id="one">
             <div class="col-md-6">
@@ -258,6 +276,8 @@
          <hr />
       </div>
       <div>
+         <p align="center" id="mailinglist"> Sign up for our Mailing List!</p>
+         
          <form id="signup" name="form" align="center" action="demo_form.asp" onsubmit="return foo()" method="post">
             <label>
             <span>Name: </span><br />
@@ -286,7 +306,7 @@
             <label>
             <br />
             <br />
-            <input type="button"  onClick="validateForm()" value="Sign Up Now">
+            <input type="button"  onClick="validateForm()" value="Confirm">
             </label>
          </form>
       </div>

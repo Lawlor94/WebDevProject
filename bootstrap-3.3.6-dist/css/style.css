@@ -1,6 +1,6 @@
 .jumbotron
 {
-    background-image:url(../backgrounda.png);
+    background-image:url(../backgroundlogo.png);
     background-attachment:fixed;
     min-height:900px;
     margin-bottom:0px;
@@ -8,7 +8,7 @@
 
 .alt1
 {
-    background:#e67e22;
+    background-image:url(../barback.png);
     min-height:400px;
 }
 
@@ -32,11 +32,13 @@ px;
 
 .alt2
 {
-    background:#303030;
+    background:#e67e22;
+    background: linear-gradient(#e67e22, #303030);
     min-height:100px;
-    color:#288aaf;
+    color:#303030;
     text-align:center;
 }
+
 
 .padding
 {
@@ -46,4 +48,13 @@ px;
 
 #userForm{
     display:none;
+}
+
+#signUpMail{
+    font-size: 20px;
+    font-style: bold;
+}
+
+.forPadding{
+    padding: 70px;
 }
