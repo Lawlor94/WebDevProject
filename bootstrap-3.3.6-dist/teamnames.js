@@ -18,7 +18,7 @@ function createXmlHttpRequestObject(){
     }
     
     if(!xmlHttp)
-        alert("cant create Object");
+        alert("Cannot create Object");
     else
         return xmlHttp;
 }
@@ -40,10 +40,10 @@ function handleServerResponse(){
             xmlResponse = xmlHttp.responseXML;
             xmlDocumentElement = xmlResponse.documentElement;
             message = xmlDocumentElement.firstChild.data;
-            document.getElementById("displayResults").innerHTML = '<span style="color:black">' + message + '</span>';
+            document.getElementById("displayResults").innerHTML = '<span style="color:blue">' + message + '</span>';
             setTimeout('process()',1000);
         }else{
-            alert('Error something went wrong');
+            alert('Error: something has gone wrong');
         }
     }
 }
